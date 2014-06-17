@@ -164,7 +164,8 @@ function moreAnimations(){
  
  
 
-
+The following page elements are so they exits so that you can find information about them in the large textarea below. 
+Add more named elements here to be able to dig deeper into webkit<br>
 <img id="move1" style="position:absolute;left:100px;top:50px" src="myPic1.png">
 
 <form name="myForm2">
@@ -175,18 +176,26 @@ function moreAnimations(){
 
 </form>
 
-
-<h3>Click the buttons to see all useable properties and methods of the object. </h3>
-
-
-
 <form name="myForm">
 
-
-
-
 <bgsound id="myFred3" src="">
-<input type=text name="myText1" size=50 value=""><br>
+
+
+
+
+
+Enter an object name here and see if it works
+<input type=text id="myIn" value='window.location'><br>
+<input type=button value="Try your own object for this page" onclick="{myObjectData(eval(document.all.myIn.value))}"><br>
+
+
+
+
+
+
+
+
+
 
 
 <input type=button value="1 window" onclick="{myObjectData(window)}">
@@ -197,27 +206,24 @@ function moreAnimations(){
 
 <input type=button value="5 window.location" onclick="{myObjectData(window.location)}">
 <input type=button value="6 window.parent" onclick="{myObjectData(window.parent)}">
-<input type=button value="7 window.chrome" onclick="{myObjectData(window.chrome)}">
 <input type=button value="8 document.all.move1.style" onclick="{myObjectData(document.all.move1.style)}">
+
 <input type=button value="9 style" onclick="{myObjectData(style)}">
-<input type=button value="10 document.all.move1" onclick="{myObjectData(document.all.move1)}">
-<input type=button value="11 window.localStorage" onclick="{myObjectData(window.localStorage)}">
 <input type=button value="12 document.getElementById('move1').style" onclick="{myObjectData(document.getElementById('move1').style)}">
 <input type=button id="my10" value="13 document.myForm2.myText1" onclick="{myObjectData(document.myForm2.myText1)}">
 <input type=button value="14 document.getElementById('myText2')" onclick="{myObjectData(document.getElementById('myText2'))}">
 
-Enter an object name here and see if it works
-<input type=text id="myIn" value='window.location'>
-<input type=button value="15" onclick="{myObjectData(eval(document.all.myIn.value))}">
 
-
+<br>
 <input type=button value=index.html onclick="location ='index.html'">
 
 
 
 
-</script>
-<textarea  name="myTextarea"  cols="60" rows="600"></textarea>
+
+This object is named:<input type=text name="myText1" size=50 value=""><br>
+
+<textarea  name="myTextarea"  cols="70" rows="600"></textarea>
     
 
 </form>

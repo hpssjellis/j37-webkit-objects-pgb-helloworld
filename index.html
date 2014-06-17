@@ -208,22 +208,23 @@ function moreAnimations(){
 
 Enter an object name here and see if it works
 <input type=text id="myIn" value='window.location'>
-<input type=button value="15" onclick="{myObjectData(document.all.myIn.value)}">
+<input type=button value="15" onclick="{myObjectData(eval(document.all.myIn.value))}">
 
+
+<input type=button value=index.html onclick="location ='index.html'">
 
 
 
 
 </script>
-<textarea style="resize: none;" data-role="none" name="myTextarea"  cols="100%" rows="50"></textarea>
+<textarea  name="myTextarea"  cols="60" rows="600"></textarea>
     
 
 </form>
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<input type=button value=index.html onclick="location ='index.html'">
-
+End of page
 
 </body>
 </html>

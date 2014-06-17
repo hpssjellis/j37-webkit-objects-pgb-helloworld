@@ -165,27 +165,28 @@ function moreAnimations(){
  
 
 The following page elements are so they exits so that you can find information about them in the large textarea below. 
-Add more named elements here to be able to dig deeper into webkit<br>
+Add more named elements here to be able to dig deeper into webkit<br><br>
+
 <img id="move1" style="position:absolute;left:100px;top:50px" src="myPic1.png">
 
 <form name="myForm2">
-  <textarea name="myTextarea">wow</textarea>
+  <textarea name="myTextarea" readonly>Generic readonly textarea</textarea>
 
-  <input type=text name="myText1" id="myText2" size=50 value=""><br>
+  <input type=text name="myText1" id="myText2" size=50 value="generic textbox"readonly><br>
 
+
+<bgsound id="myFred3" src="">
 
 </form>
 
 <form name="myForm">
-
-<bgsound id="myFred3" src="">
 
 
 
 
 
 Enter an object name here and see if it works
-<input type=text id="myIn" value='window.location'><br>
+<input type=text id="myIn" value='window.document'><br>
 <input type=button value="Try your own object for this page" onclick="{myObjectData(eval(document.all.myIn.value))}"><br>
 
 
@@ -214,16 +215,16 @@ Enter an object name here and see if it works
 <input type=button value="14 document.getElementById('myText2')" onclick="{myObjectData(document.getElementById('myText2'))}">
 
 
-<br>
-<input type=button value=index.html onclick="location ='index.html'">
+<br><br>
+<input type=button value="Return or refresh" onclick="location ='index.html'"><br><br>
 
 
 
 
 
-This object is named:<input type=text name="myText1" size=50 value=""><br>
+This object is named:<input type=text name="myText1" size=50 value="" readonly><br>
 
-<textarea  name="myTextarea"  cols="70" rows="600"></textarea>
+<textarea  name="myTextarea"  cols="70" rows="600" readonly></textarea>
     
 
 </form>

@@ -196,7 +196,7 @@ Enter an object name here and see if it works<br>
     <option value="myText2id">myText2id
     <option value="move1">move1
     <option value="myFred3">myFred3
-    <option value="">
+    <option value="mySVG">mySVG
     <option value="">
     <option value="">
     <option value="">
@@ -236,6 +236,52 @@ Add more named elements here to be able to dig deeper into webkit<br><br>
 
 
 <bgsound id="myFred3" name="myBgObject" src="">
+
+
+
+
+
+
+
+<div id="myDiv1"  ><img src="myPic1.png" width=40>
+
+<svg id="mySVG" name="mySVGname" width="600" height="500">
+  
+  <line x1="0" y1="0" x2="200" y2="20" style="stroke:rgb(255,55,0);stroke-width:2" />
+  
+  <rect width="80" height="60"  x="200" y="200" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+  </rect>    
+  
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  
+  <path d="M550 400 L75 200 L225 200 Z"  fill="green" />
+  
+  <polyline points="0,0 0,20 20,20 20,40 40,40 40,60" fill="red" />
+
+  <text x="300" y="200" style="fill:red;"  >Simple Text</text>
+ 
+  <a xlink:href="http://www.w3schools.com/svg/" target="_blank">
+      <text x="400" y="20" style="fill:blue;"  transform="rotate(30 20,40)" >Several lines:
+         <tspan x="400" y="45">First line.</tspan>
+         <tspan x="400" y="70"  >Second line.</tspan>
+      </text>
+  </a>
+  
+
+  
+</svg>
+
+
+
+</div>
+
+
+
+
+
+
+
 
 </form>
 

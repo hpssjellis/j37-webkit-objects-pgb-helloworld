@@ -180,12 +180,17 @@ Enter an object name here and see if it works<br>
 <select id="mySelect" onchange="{
    myObjectData(eval(document.all.mySelect.value))
 }">
-    <option vallue="">
+    <option value="">
     <option value="window">window
     <option value="document">document
     <option value="document.myForm2">document.myForm2
-
-</select>
+    <option value="document.myForm2.myTextarea2">document.myForm2.myTextarea2
+    <option value="window.parent">window.parent
+    <option value="document.all.move1.style">document.all.move1.style
+    <option value="document.myForm2.myText2">document.myForm2.myText2
+    <option value="myText2id">myText2id
+    <option value="">
+</select><br>
 
 
 
@@ -200,7 +205,7 @@ Enter an object name here and see if it works<br>
 <input type=button value="7 document.all.move1.style" onclick="{myObjectData(document.all.move1.style)}"><br>
 
 <input type=button value="8 style" onclick="{myObjectData(style)}">
-<input type=button value="9 document.getElementById('move1').style" onclick="{myObjectData(eval(document.getElementById('move1').style))}">
+<input type=button value="9 document.getElementById('move1').style" onclick="{myObjectData(eval(document.getElementById('document.myForm2.myText2').style))}">
 <input type=button id="my10" value="10 document.myForm2.myText2" onclick="{myObjectData(document.myForm2.myText2)}"><br>
 <input type=button value="11 document.getElementById('myText2')" onclick="{myObjectData(eval(document.getElementById('myText2id')))}">
 <br>
@@ -225,7 +230,7 @@ This object is named:<input type=text name="myText1" size=50 value="" readonly><
 The following page elements are so they exits so that you can find information about them in the large textarea below. 
 Add more named elements here to be able to dig deeper into webkit<br><br>
 
-<img id="move1" style="position:absolute;left:100px;top:50px" src="myPic1.png">
+<img id="move1" style="position:absolute;left:100px;top:650px" src="myPic1.png">
 
 <form name="myForm2">
   <textarea name="myTextarea2" readonly>Generic readonly textarea</textarea>

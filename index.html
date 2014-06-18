@@ -114,7 +114,7 @@ function myObjectData(myObject){
  myLoop = 0
  for (var prop in myObject){
     myLoop+=1
-    document.myForm.myTextarea.value+=myObject.name+'.'+prop+'='+myObject[prop]+ '\n'
+    document.myForm.myTextarea.value+=myObject.name+'.'+prop+'='+myObject[prop]+ '\n\n'
     if (myLoop % 3 == 1){
  window.status += '.'}   
  }

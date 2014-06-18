@@ -177,18 +177,22 @@ Enter an object name here and see if it works<br>
 
 
 
+<slect id="mySelect" onchange="{
+    alert()
+}">
+    <option vallue="">
+    <option value="window">window
+    <option value="document">document
+    <option value="document.myForm2">document.myForm2
 
-
-
-
-
+</slect>
 
 
 
 <input type=button value="1 window" onclick="{myObjectData(window)}"><br>
 <input type=button value="2 document" onclick="{myObjectData(document)}"><br>
 <input type=button value="3 document.myForm2" onclick="{myObjectData(document.myForm2)}"><br>
-<input type=button value="4 document.myForm2.myTextarea" onclick="{myObjectData(document.myForm2.myTextarea)}"><br>
+<input type=button value="4 document.myForm2.myTextarea" onclick="{myObjectData(document.myForm2.myTextarea2)}"><br>
 
 
 <input type=button value="5 window.location" onclick="{myObjectData(window.location)}"><br>

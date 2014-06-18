@@ -196,9 +196,9 @@ Enter an object name here and see if it works<br>
 <input type=button value="7 document.all.move1.style" onclick="{myObjectData(document.all.move1.style)}"><br>
 
 <input type=button value="8 style" onclick="{myObjectData(style)}">
-<input type=button value="9 document.getElementById('move1').style" onclick="{myObjectData(document.getElementById('move1').style)}">
-<input type=button id="my10" value="10 document.myForm2.myText1" onclick="{myObjectData(document.myForm2.myText1)}"><br>
-<input type=button value="11 document.getElementById('myText2')" onclick="{myObjectData(document.getElementById('myText2'))}">
+<input type=button value="9 document.getElementById('move1').style" onclick="{myObjectData(eval(document.getElementById('move1').style))}">
+<input type=button id="my10" value="10 document.myForm2.myText2" onclick="{myObjectData(document.myForm2.myText2)}"><br>
+<input type=button value="11 document.getElementById('myText2')" onclick="{myObjectData(eval(document.getElementById('myText2id')))}">
 <br>
 
 <br><br>
@@ -224,9 +224,9 @@ Add more named elements here to be able to dig deeper into webkit<br><br>
 <img id="move1" style="position:absolute;left:100px;top:50px" src="myPic1.png">
 
 <form name="myForm2">
-  <textarea name="myTextarea" readonly>Generic readonly textarea</textarea>
+  <textarea name="myTextarea2" readonly>Generic readonly textarea</textarea>
 
-  <input type=text name="myText1" id="myText2" size=50 value="generic textbox"readonly><br>
+  <input type=text name="myText2" id="myText2id" size=50 value="generic textbox"readonly><br>
 
 
 <bgsound id="myFred3" src="">

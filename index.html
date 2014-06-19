@@ -180,7 +180,7 @@ Enter an object name here and see if it works<br>
 <input type=text id="myIn" value='window.document'><br>
 <input type=button value="Try your own object for this page" onclick="{myObjectData(eval(document.all.myIn.value))}"><br><br>
 
-Select from one of the presets below (Edit this select box for your own elements):<br>
+Select from one of the presets below (Edit this select box for your own elements:)<br>
 
 <select id="mySelect" onchange="{
    myObjectData(eval(document.all.mySelect.value))
@@ -204,6 +204,8 @@ Select from one of the presets below (Edit this select box for your own elements
     <option value="anchors[0]">anchors[0]
     <option value="location">location
     <option value="history">history
+    <option value="frames[0]">frames[0]
+    <option value="">
     <option value="">
     <option value="">
 </select><br>
